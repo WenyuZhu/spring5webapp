@@ -5,7 +5,7 @@ import guru.springframework.spring5webapp.domain.Book;
 import guru.springframework.spring5webapp.domain.Publisher;
 import guru.springframework.spring5webapp.repositories.AuthorRepository;
 import guru.springframework.spring5webapp.repositories.BookRepository;
-import guru.springframework.spring5webapp.repositories.PublishReppository;
+import guru.springframework.spring5webapp.repositories.PublishRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,9 +13,9 @@ import org.springframework.stereotype.Component;
 public class BootStrapData implements CommandLineRunner{
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
-    private final PublishReppository publishReppository;
+    private final PublishRepository publishReppository;
 
-    public BootStrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublishReppository publishReppository){
+    public BootStrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublishRepository publishReppository){
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
         this.publishReppository = publishReppository;
